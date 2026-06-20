@@ -6,7 +6,7 @@ O banco de dados foi modelado utilizando o conceito relacional no PostgreSQL, se
 Armazena as informações de identificação dos profissionais de saúde cadastrados no sistema.
 * **Chave Primária (PK):** `crm` (Identificador único gerado automaticamente pelo SGBD).
 * **Atributos:** `nome` (Texto/Varchar) e `telefone` (Numérico/Integer).
-* **Localização do Script:** https://github.com/ElieneFeitosa/projeto-sistema-clinica-med/blob/main/tabela1.sql.
+* **Localização do Script:** [https://github.com/ElieneFeitosa/projeto-sistema-clinica-med/blob/main/tabela1.sql.](https://github.com/ElieneFeitosa/projeto-sistema-clinica-med/tree/main/tabela-1)
 
 ### 2. Entidade: Paciente
 Registra os dados pessoais e de contato de cada paciente atendido.
