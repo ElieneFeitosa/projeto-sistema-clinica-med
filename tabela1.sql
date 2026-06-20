@@ -1,0 +1,6 @@
+CREATE TABLE MEDICO(
+	crm int GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+	Nome varchar (255),
+	Telefone int
+);
+
