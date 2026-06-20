@@ -12,7 +12,7 @@ Armazena as informações de identificação dos profissionais de saúde cadastr
 Registra os dados pessoais e de contato de cada paciente atendido.
 * **Chave Primária (PK):** `cpf` (Identificador único gerado automaticamente pelo SGBD).
 * **Atributos:** `nome` (Texto/Varchar), `data_nasc` (Data/Date) e `telefone` (Numérico/Smallint).
-* **Localização do Script:** https://github.com/ElieneFeitosa/projeto-sistema-clinica-med/blob/main/tabela2.sql
+* **Localização do Script:** [https://github.com/ElieneFeitosa/projeto-sistema-clinica-med/blob/main/tabela2.sql](https://github.com/ElieneFeitosa/projeto-sistema-clinica-med/tree/main/tabela-2)
 * 
 ### 3. Relacionamento / Entidade Associativa: Consulta
 Tabela responsável por mapear o relacionamento entre **Medico** e **Paciente**, registrando o agendamento, nome do médico, nome do paciente e status.
@@ -21,7 +21,7 @@ Tabela responsável por mapear o relacionamento entre **Medico** e **Paciente**,
 * **Chaves Estrangeiras (FK):**
   * `crm`: Referencia a chave primária `crm` da tabela `MEDICO` (Restrição: `fk_crm`).
   * `cpf`: Referencia a chave primária `cpf` da tabela `Paciente` (Restrição: `fk_cpf`).
-* **Localização do Script:** https://github.com/ElieneFeitosa/projeto-sistema-clinica-med/blob/main/tabela3.sql
+* **Localização do Script:**[ https://github.com/ElieneFeitosa/projeto-sistema-clinica-med/blob/main/tabela3.sql](https://github.com/ElieneFeitosa/projeto-sistema-clinica-med/tree/main/tabela-3)
 * **Tipos de relacionamentos** `consulta -> médico`: N -> 1 `medico -> consulta`: 1-> N.
 
 ---
