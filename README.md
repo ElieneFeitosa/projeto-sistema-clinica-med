@@ -22,5 +22,6 @@ Tabela responsável por mapear o relacionamento entre **Medico** e **Paciente**,
   * `crm`: Referencia a chave primária `crm` da tabela `MEDICO` (Restrição: `fk_crm`).
   * `cpf`: Referencia a chave primária `cpf` da tabela `Paciente` (Restrição: `fk_cpf`).
 * **Localização do Script:** https://github.com/ElieneFeitosa/projeto-sistema-clinica-med/blob/main/tabela3.sql
+* **Tipos de relacionamentos** `consulta -> médico`: N -> 1 `medico -> consulta`: 1-> N.
 
 ---
