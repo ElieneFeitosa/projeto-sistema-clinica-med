@@ -5,6 +5,7 @@ O banco de dados foi modelado utilizando o conceito relacional no PostgreSQL, se
 ### 1. Entidade: Medico
 Armazena as informações de identificação dos profissionais de saúde cadastrados no sistema.
 * **Chave Primária (PK):** `crm` (Identificador único gerado automaticamente pelo SGBD).
+* **Chave Estrangeira (FK):** `id_especialidade` : É a Chave Estrangeira que apenas guarda a cópia do ID que esta na tabela especialidade.
 * **Atributos:** `nome` (Texto/Varchar) e `telefone` (Numérico/Integer).
 * **Localização do Script:** [https://github.com/ElieneFeitosa/projeto-sistema-clinica-med/blob/main/tabela1.sql.](https://github.com/ElieneFeitosa/projeto-sistema-clinica-med/tree/main/tabela-1)
 
