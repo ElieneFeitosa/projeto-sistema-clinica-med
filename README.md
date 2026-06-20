@@ -7,8 +7,8 @@ Armazena as informações de identificação dos profissionais de saúde cadastr
 * **Chave Primária (PK):** `crm` (Identificador único gerado automaticamente pelo SGBD).
 * **Chave Estrangeira (FK):** `id_especialidade` : É a Chave Estrangeira que apenas guarda a cópia do ID que esta na tabela especialidade.
 * **Atributos:** `nome` (Texto/Varchar) e `telefone` (Numérico/Integer).
-* **Localização do Script:** [https://github.com/ElieneFeitosa/projeto-sistema-clinica-med/blob/main/tabela1.sql.](https://github.com/ElieneFeitosa/projeto-sistema-clinica-med/tree/main/tabela-1)
-
+* **Localização do Script:** https://github.com/ElieneFeitosa/projeto-sistema-clinica-med/tree/main/tabela-1
+  
 ### 2. Entidade: Paciente
 Registra os dados pessoais e de contato de cada paciente atendido.
 * **Chave Primária (PK):** `cpf` (Identificador único gerado automaticamente pelo SGBD).
@@ -24,5 +24,22 @@ Tabela responsável por mapear o relacionamento entre **Medico** e **Paciente**,
   * `cpf`: Referencia a chave primária `cpf` da tabela `Paciente` (Restrição: `fk_cpf`).
 * **Localização do Script:**[ https://github.com/ElieneFeitosa/projeto-sistema-clinica-med/blob/main/tabela3.sql](https://github.com/ElieneFeitosa/projeto-sistema-clinica-med/tree/main/tabela-3)
 * **Tipos de relacionamentos** `consulta -> médico`: N -> 1 `medico -> consulta`: 1-> N.
+
+
+###  4. Entidade: Especialidade
+Tabela de suporte que armazena as especialidades médicas disponíveis e seus respectivos custos base.
+* **Chave Primária (PK):** `id_especialidade` (Identificador único gerado automaticamente pelo SGBD).
+* **Atributos:** `nome_especialidade` (Texto/Varchar) e `valor_especialidade` (Numérico Decimal/Decimal).
+* **Localização do Script:** https://github.com/ElieneFeitosa/projeto-sistema-clinica-med/blob/main/tabela-4/tabela4.sql
+
+
+### 5. Entidade: RECEITA
+Registra as prescrições médicas e orientações geradas a partir de um atendimento realizado.
+* **Chave Primária (PK):** `id_receita` (Identificador único gerado automaticamente pelo SGBD).
+* **Atributos Próprios:** `data_receita` (Data/Date) e `orientacoes` (Texto longo/Varchar).
+* **Chaves Estrangeiras (FK):**
+  * `id_consulta`: Referencia a chave primária `id_consulta` da tabela `Consulta` (Restrição: `fk_receita_consulta`). Garante que nenhuma receita exista sem estar vinculada a um atendimento válido.
+* **Localização do Script:** https://github.com/ElieneFeitosa/projeto-sistema-clinica-med/blob/main/tabela-5/tabela5.sql
+
 
 ---
