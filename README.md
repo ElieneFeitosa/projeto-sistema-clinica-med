@@ -48,5 +48,7 @@ Gerencia o desmembramento dos medicamentos prescritos em uma receita, permitindo
 * **Chaves Estrangeiras (FK):** * `id_receita`: Referencia a chave primária `id_receita` da tabela `RECEITA` (Restrição: `fk_item_receita`). Garante a integridade referencial, impedindo itens órfãos sem uma receita mãe.
 * **Localização do Script:** https://github.com/ElieneFeitosa/projeto-sistema-clinica-med/tree/main/tabela-6
 
+* ### Diagrama ERD: https://github.com/ElieneFeitosa/projeto-sistema-clinica-med/tree/main/ERD
+
 
 ---
