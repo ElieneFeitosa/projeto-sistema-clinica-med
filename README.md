@@ -41,5 +41,12 @@ Registra as prescrições médicas e orientações geradas a partir de um atendi
   * `id_consulta`: Referencia a chave primária `id_consulta` da tabela `Consulta` (Restrição: `fk_receita_consulta`). Garante que nenhuma receita exista sem estar vinculada a um atendimento válido.
 * **Localização do Script:** https://github.com/ElieneFeitosa/projeto-sistema-clinica-med/blob/main/tabela-5/tabela5.sql
 
+* ### 6. Entidade Dependente: item_receita
+Gerencia o desmembramento dos medicamentos prescritos em uma receita, permitindo que uma única receita contenha múltiplos remédios e dosagens.
+* **Chave Primária (PK):** `id_item` (Identificador único do item gerado automaticamente pelo SGBD).
+* **Atributos Próprios:** `medicamento` (Nome do fármaco/Varchar) e `dosagem` (Instruções de uso e miligramagem/Varchar).
+* **Chaves Estrangeiras (FK):** * `id_receita`: Referencia a chave primária `id_receita` da tabela `RECEITA` (Restrição: `fk_item_receita`). Garante a integridade referencial, impedindo itens órfãos sem uma receita mãe.
+* **Localização do Script:** https://github.com/ElieneFeitosa/projeto-sistema-clinica-med/tree/main/tabela-6
+
 
 ---
