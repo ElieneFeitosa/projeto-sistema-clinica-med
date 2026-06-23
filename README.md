@@ -48,6 +48,16 @@ Gerencia o desmembramento dos medicamentos prescritos em uma receita, permitindo
 * **Chaves Estrangeiras (FK):** * `id_receita`: Referencia a chave primária `id_receita` da tabela `RECEITA` (Restrição: `fk_item_receita`). Garante a integridade referencial, impedindo itens órfãos sem uma receita mãe.
 * **Localização do Script:** https://github.com/ElieneFeitosa/projeto-sistema-clinica-med/tree/main/tabela-6
 
+*  ### 7. Arquivo de inserts:
+*  inclui o script de inserção dos dados utilizados para validar o sistema.
+* **Localização do Script:** https://github.com/ElieneFeitosa/projeto-sistema-clinica-med/blob/main/Inserts.sql
+
+* ### 8. Consultas SQL:
+  
+* Conjunto de consultas SQL desenvolvidas para testar os relacionamentos e recuperar informações armazenadas no banco de dados.
+* As consultas utilizam comandos como SELECT e JOIN para exibir dados de consultas e receitas cadastradas no sistema.
+* * **Localização do Script:** 
+
 * ### Diagrama ERD: https://github.com/ElieneFeitosa/projeto-sistema-clinica-med/tree/main/ERD
 
 
