@@ -56,8 +56,7 @@ Gerencia o desmembramento dos medicamentos prescritos em uma receita, permitindo
   
 * Conjunto de consultas SQL desenvolvidas para testar os relacionamentos e recuperar informações armazenadas no banco de dados.
 * As consultas utilizam comandos como SELECT e JOIN para exibir dados de consultas e receitas cadastradas no sistema.
-* * **Localização do Script:** https://github.com/ElieneFeitosa/projeto-sistema-clinica-med/blob/main/consultas_sql.zip
-
+* * **Localização do Script:** https://github.com/ElieneFeitosa/projeto-sistema-clinica-med/blob/main/consultas.sql
 * ### Diagrama ERD: https://github.com/ElieneFeitosa/projeto-sistema-clinica-med/tree/main/ERD
 
 
